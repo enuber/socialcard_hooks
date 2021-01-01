@@ -1,24 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import CardHolder from './card/CardHolder';
 import CardHeader from './card/CardHeader';
 import CardMainContent from './card/CardMainContent';
 import { generateList } from './helper_functions/generatedata';
 
-class App extends React.Component {
+const App = () => {
 
-    state = {
-        socialCardArr : []
-    };
+    const [socialCardArr, setSocialCardArr] = useState([]);
 
-    componentDidMount() {
-        const socialCardArr = generateList();
-        this.setState({
-            socialCardArr
-        });
-    }
+    useEffect(() => {
+        setSocialCardArr(generateList());
+    },[]);
 
-    renderCards = () => {
-        const cards = this.state.socialCardArr.map(card =>
+    const renderCards = () => {
+        const cards = socialCardArr.map(card =>
             (
                 <CardHolder key={card.key}>
                     <CardHeader
@@ -45,15 +40,14 @@ class App extends React.Component {
         return cards;
     };
 
-    render() {
-        return (
-            <div>
-                <h2>Social Cards - React Using Component State and Props</h2>
-                <hr />
-                {this.renderCards()}
-            </div>
-        )
-    }
+    return (
+        <div>
+            <h2>Social Cards - React Using hooks</h2>
+            <hr />
+            {renderCards()}
+        </div>
+    )
+
 };
 
 export default App;

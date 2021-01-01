@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-//objected used in sorting data by month. Allows for comparsion based on value of month
+//objected used in sorting data by month. Allows for comparison based on value of month
 const month = {
     January: 1,
     February: 2,
@@ -36,7 +36,6 @@ export const generateList = () => {
         let randomNum = faker.random.number({min:1, max: 75});
         let avatarSRC = require(`../../images/abs${randomNum}.jpg`);
         let personalSRC = require(`../../images/a${randomNum}.jpg`);
-        debugger;
        return ({
             avatar: avatarSRC.default,
             color: faker.commerce.color(),
