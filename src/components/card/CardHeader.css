@@ -1,0 +1,30 @@
+.avatar {
+    border-radius: 50%;
+    display: inline-block;
+    height: 60px;
+    margin-right: 25px;
+    vertical-align: middle;
+    width: 60px;
+}
+.companyName {
+    font-weight: bold;
+}
+.headerTextContainer {
+    display: inline-block;
+    vertical-align: middle;
+}
+.makeLightGrey {
+    color: #999;
+}
+.makeBlue {
+    color: #0645AD;
+}
+p {
+    letter-spacing: .5px;
+    line-height: 1;
+}
+@media screen and (min-width: 640px) {
+    p {
+        line-height: .65;
+    }
+}

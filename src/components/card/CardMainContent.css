@@ -1,0 +1,12 @@
+.mainCard {
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .mainCard {
+        margin-left: 85px;
+        width: calc(100% - 85px);
+    }
+}

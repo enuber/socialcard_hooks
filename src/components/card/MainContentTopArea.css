@@ -1,0 +1,40 @@
+.avatarMainContent {
+    height: 60px;
+    width: 60px;
+}
+h1 {
+    color: #FFF;
+    font-size: 3rem;
+    padding: 0px 30px 60px;
+}
+.nameContainer {
+    bottom: 15px;
+    background-color: #fff;
+    padding: 8px;
+    position: absolute;
+    right: 15px;
+}
+.nameContainer img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+.nameOfPerson {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.topAreaContainer {
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    width: 95%;
+}
+@media screen and (min-width: 640px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
